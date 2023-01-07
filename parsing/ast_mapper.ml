@@ -902,7 +902,7 @@ module PpxContext = struct
       | "include_dirs" ->
           Clflags.include_dirs := get_list get_string payload
       | "load_path" ->
-          Load_path.init (get_list get_string payload)
+          Load_path.init ~auto_include:Compmisc.auto_include (get_list get_string payload)
       | "open_modules" ->
           Clflags.open_modules := get_list get_string payload
       | "for_package" ->
