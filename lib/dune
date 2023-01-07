@@ -15,7 +15,10 @@
  (public_name melange-compiler-libs)
  (flags -w -9)
  (libraries menhirLib melange-compiler-libs.wrapper)
- (modules_without_implementation annot))
+ (modules_without_implementation annot)
+ (preprocess
+  (action
+   (run %{bin:cppo} -V OCAML:%{ocaml_version} %{input-file}))))
 
 (ocamllex
  (modules lexer)
