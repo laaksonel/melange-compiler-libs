@@ -107,8 +107,8 @@ and cmxa_magic_number =
     "Caml1999z031"
   else
     "Caml1999Z031"
-and ast_impl_magic_number = "Caml1999M031"
-and ast_intf_magic_number = "Caml1999N031"
+and ast_impl_magic_number = "Caml1999M032"
+and ast_intf_magic_number = "Caml1999N032"
 and cmxs_magic_number = "Caml1999D031"
 and cmt_magic_number = "Caml1999T031"
 and linear_magic_number = "Caml1999L031"
